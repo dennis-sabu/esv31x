@@ -27,7 +27,7 @@ export default function TrustPage() {
           ease: "power1.out",
           scrollTrigger: {
             trigger: stat,
-            start: "top 80%",
+            start: "top 90%",
           },
           snap: { innerText: 1 },
           onUpdate: function () {

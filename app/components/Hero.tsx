@@ -81,19 +81,19 @@ export default function Hero() {
   <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-6 py-12">
     {/* Card 1 */}
     <div className="relative bg-orange-50 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col h-full overflow-hidden">
-    <h3 className="font-semibold text-lg text-gray-900 mb-2">
+    <h3 className="font-semibold text-3xl text-gray-900 mb-2">
       Digital Health Records
     </h3>
-    <p className="text-gray-600 text-sm mb-6">
+    <p className="text-gray-600 text-2xl mb-6">
       Securely store and access medical history, prescriptions, and allergies.
     </p>
-    <div className="flex justify-center items-end mt-auto">
+    <div className="flex justify-center items-end mt-auto -m-9">
       <Image
       src="/image-removebg-preview (3) 1.webp"
-        alt="Digital Health Records"
-        width={250}
-        height={250}
-        className="object-contain"
+      alt="Digital Health Records"
+      width={250}
+      height={250}
+      className="object-contain "
       />
     </div>
     {/* Gradient Fade */}
@@ -102,19 +102,19 @@ export default function Hero() {
 
   {/* Card 2 */}
   <div className="relative bg-orange-50 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col h-full overflow-hidden">
-    <h3 className="font-semibold text-lg text-gray-900 mb-2">
+    <h3 className="font-semibold text-3xl text-gray-900 mb-2">
       Smart Appointment Booking
     </h3>
-    <p className="text-gray-600 text-sm mb-6">
+    <p className="text-gray-600 text-2xl mb-6">
       Effortlessly schedule consultations and receive instant confirmations.
     </p>
-    <div className="flex justify-center items-end mt-auto">
+    <div className="flex justify-center items-end mt-auto -m-9">
       <Image
-        src="/handsome-young-multiethnic-business-couple-with-digital-tablet-standing-discussing-modern-office 1.webp"
-        alt="Smart Appointment Booking"
-        width={250}
-        height={250}
-        className="object-contain"
+      src="/handsome-young-multiethnic-business-couple-with-digital-tablet-standing-discussing-modern-office 1.webp"
+      alt="Smart Appointment Booking"
+      width={250}
+      height={250}
+      className="object-contain"
       />
     </div>
     {/* Gradient Fade */}
@@ -123,13 +123,13 @@ export default function Hero() {
 
   {/* Card 3 */}
   <div className="relative bg-orange-50 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col h-full overflow-hidden">
-    <h3 className="font-semibold text-lg text-gray-900 mb-2">
+    <h3 className="font-semibold text-3xl text-gray-900 mb-2">
       Prescription Management
     </h3>
-    <p className="text-gray-600 text-sm mb-6">
+    <p className="text-gray-600 text-2xl mb-6">
       Doctors upload prescriptions with dosage schedules; patients get real-time reminders.
     </p>
-    <div className="flex justify-center items-end mt-auto">
+    <div className="flex justify-center items-end mt-auto -m-9">
       <Image
         src="/image-removebg-preview (1) 1.webp"
         alt="Prescription Management"
@@ -144,13 +144,13 @@ export default function Hero() {
 
   {/* Card 4 */}
   <div className="relative bg-orange-50 p-6 rounded-xl shadow hover:shadow-lg transition flex flex-col h-full overflow-hidden">
-    <h3 className="font-semibold text-lg text-gray-900 mb-2">
+    <h3 className="font-semibold text-3xl text-gray-900 mb-2">
       Verified Medicine Intake
     </h3>
-    <p className="text-gray-600 text-sm mb-6">
+    <p className="text-gray-600 text-2xl mb-6">
       Patients upload proof of medicine intake; doctors track adherence in real time.
     </p>
-    <div className="flex justify-center items-end mt-auto">
+    <div className="flex justify-center items-end mt-auto -m-9 ">
       <Image
         src="/image-removebg-preview 1.webp"
         alt="Verified Medicine Intake"
@@ -166,7 +166,7 @@ export default function Hero() {
 
         <main className="max-w-7xl mx-auto px-6 py-16">
       {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-bold text-left mb-12">
+      <h2 className="text-3xl md:text-6xl font-bold text-left mb-12">
         <span className="text-gray-900">How It </span>
         <span className="text-green-500">Works</span>
       </h2>
@@ -177,7 +177,7 @@ export default function Hero() {
           {/* Card 1 */}
           <div className="bg-orange-50 p-6 rounded-xl shadow hover:shadow-lg transition text-center">
             <FaCalendarAlt className="text-green-500 text-4xl mx-auto mb-3" />
-            <h3 className="font-bold text-lg text-gray-900 mb-1">
+            <h3 className="font-bold text-2xl md:text-3xl text-gray-900 mb-1">
               Book Or Manage Appointments
             </h3>
             <p className="text-gray-600 text-sm">
@@ -188,7 +188,7 @@ export default function Hero() {
           {/* Card 2 */}
           <div className="bg-orange-50 p-6 rounded-xl shadow hover:shadow-lg transition text-center">
             <FaLink className="text-green-500 text-4xl mx-auto mb-3" />
-            <h3 className="font-bold text-lg text-gray-900 mb-1">
+            <h3 className="font-bold text-2xl md:text-3xl text-gray-900 mb-1">
               Track & Monitor Treatment
             </h3>
             <p className="text-gray-600 text-sm">
@@ -207,7 +207,7 @@ export default function Hero() {
             <p className="text-gray-600 mb-6 ">
             Create your secure profile with relevant details.
             </p>
-            <div className="flex justify-center ">
+            <div className="flex justify-center items-center -m-6">
             <Image
               src="/Mockup.webp" 
               alt="Track Your Health Progress"
@@ -223,7 +223,7 @@ export default function Hero() {
           {/* Card 3 */}
           <div className="bg-orange-50 p-6 rounded-xl shadow hover:shadow-lg transition text-center">
             <FaDollarSign className="text-green-500 text-4xl mx-auto mb-3" />
-            <h3 className="font-bold text-lg text-gray-900 mb-1">
+            <h3 className="font-bold text-2xl md:text-3xl text-gray-900 mb-1">
               Secure Access With OTP
             </h3>
             <p className="text-gray-600 text-sm">
@@ -234,7 +234,7 @@ export default function Hero() {
           {/* Card 4 */}
           <div className="bg-orange-50 p-6 rounded-xl shadow hover:shadow-lg transition text-center">
             <FaGift className="text-green-500 text-4xl mx-auto mb-3" />
-            <h3 className="font-bold text-lg text-gray-900 mb-1">
+            <h3 className="font-bold text-2xl md:text-3xl text-gray-900 mb-1">
               Your Health Matters
             </h3>
             <p className="text-gray-600 text-sm">

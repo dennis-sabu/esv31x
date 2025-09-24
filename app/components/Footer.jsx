@@ -150,7 +150,7 @@ export default function FaqWithFooter() {
 
         {/* Sub Footer */}
         <div className="border-t mt-6 pt-4 pb-4 text-sm text-white-600 flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-6">
-          <p>© All rights reserved. Flowfye.</p>
+          <p>© All rights reserved. Medilink</p>
           <div className="flex gap-6">
             <a href="#">Privacy Policies</a>
             <a href="#">Terms & Conditions</a>

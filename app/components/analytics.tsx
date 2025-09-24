@@ -3,6 +3,22 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { FaEdit, FaTrash, FaEllipsisH, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 
+// Patient type definition
+interface Patient {
+  id: number;
+  name: string;
+  email: string;
+  phone: string;
+  gender: string;
+  avatar: string;
+  status: string;
+  age: number;
+  condition: string;
+  lastVisit: string;
+  address: string;
+  emergencyContact: string;
+}
+
 // Dummy patient data
 const patientsData = [
   {
@@ -194,7 +210,7 @@ const Analytics = () => {
     setOpenDropdown(null);
   };
 
-  const handlePatientSelect = (patient: any) => {
+  const handlePatientSelect = (patient: Patient) => {
     setSelectedPatient(patient);
   };
 

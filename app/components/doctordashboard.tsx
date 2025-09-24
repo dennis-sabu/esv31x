@@ -265,7 +265,7 @@ const DoctorDashboard = () => {
         {/* Today's Appointments */}
         <div className="bg-white p-6 rounded-xl shadow-sm">
           <div className="flex justify-between items-center mb-6">
-            <h3 className="text-lg font-semibold text-gray-800">Today's Appointments</h3>
+            <h3 className="text-lg font-semibold text-gray-800">Today&apos;s Appointments</h3>
             <FaEllipsisH className="text-gray-400" />
           </div>
           <div className="flex items-center justify-center h-32">

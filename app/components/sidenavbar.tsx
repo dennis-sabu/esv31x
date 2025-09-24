@@ -19,7 +19,7 @@ const SideNavbar = () => {
   const pathname = usePathname();
 
   const menuItems = [
-    { name: 'Dashboard', icon: FaTachometerAlt, path: '/Doctersdashboard', color: 'text-gray-600' },
+    { name: 'Dashboard', icon: FaTachometerAlt, path: '/Doctorsdashboard', color: 'text-gray-600' },
     { name: 'Analytics', icon: FaChartBar, path: '/analitics', color: 'text-green-500' },
     { name: 'Invoice', icon: FaFileInvoice, path: '/invoice', color: 'text-gray-600' },
     { name: 'Schedule', icon: FaCalendarAlt, path: '/schedule', color: 'text-gray-600' },
@@ -79,7 +79,7 @@ const SideNavbar = () => {
             <FaUser className="text-white text-2xl" />
           </div>
           <button className="w-full bg-green-500 text-white py-2 px-4 rounded-lg font-medium hover:bg-green-600 transition-colors">
-            Upgrade Today's pro
+            Upgrade Today&apos;s pro
           </button>
         </div>
       </div>

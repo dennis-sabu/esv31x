@@ -144,11 +144,11 @@ export default function Navbar() {
         {/* Desktop Buttons */}
         <div className="hidden md:flex items-center space-x-4">
           <Link
-            href="/signin"
-            className="px-5 py-2 rounded-full border border-green-500 text-green-600 
+            href="/auth"
+            className="px-5 py-2 rounded-full border border-green-500 text-green-600  
             transition hover:bg-black hover:text-white active:scale-95"
           >
-            Sign In
+            Log In
           </Link>
           <Link
             href="/get-started"
@@ -213,7 +213,7 @@ export default function Navbar() {
           {/* Bottom Buttons */}
           <div className="px-6 pb-10 space-y-4">
             <Link
-              href="/signin"
+              href="/auth"
               onClick={closeMobileMenu}
               ref={(el) => {
                 if (el) linksRef.current[5] = el;
@@ -221,7 +221,7 @@ export default function Navbar() {
               className="block w-full text-center px-5 py-3 rounded-full border border-white 
               transition hover:bg-white hover:text-black active:scale-95"
             >
-              Sign In
+              Log In
             </Link>
             <Link
               href="/get-started"

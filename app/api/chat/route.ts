@@ -21,7 +21,7 @@ export async function POST(req: Request) {
       return new Response(
         JSON.stringify({
           text:
-            '⚠️ Gemini API key is not configured. Please set GOOGLE_API_KEY or GEMINI_API_KEY in your .env.local and restart the app.',
+            'Api request failed:',
         }),
         { status: 200, headers: { 'Content-Type': 'application/json' } }
       );
@@ -66,7 +66,7 @@ The Secure Health Management & Personalized Medicine Tracking Platform is a role
       return new Response(
         JSON.stringify({
           text:
-            "⚠️ Gemini request failed: " +
+            "⚠️ Api request failed: " +
             (data.error?.message || "Unknown error"),
         }),
         { status: 200, headers: { "Content-Type": "application/json" } }
@@ -87,7 +87,7 @@ The Secure Health Management & Personalized Medicine Tracking Platform is a role
   } catch (err) {
     console.error("Server Error:", err);
     return new Response(
-      JSON.stringify({ text: "⚠️ Server error talking to Gemini." }),
+      JSON.stringify({ text: "⚠️ Server error talking to AI" }),
       { status: 200, headers: { "Content-Type": "application/json" } }
     );
   }

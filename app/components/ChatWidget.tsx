@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { formatChatResponse } from './ChatService';
 import { usePathname } from 'next/navigation';
+import { FaRegMessage } from "react-icons/fa6";
 
 // Use local types to avoid conflicts
 type Role = 'user' | 'bot';
@@ -15,7 +16,7 @@ export default function ChatWidget() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
-    { role: 'bot', content: `Hi! I'm ${BOT_NAME}. How can I help you today?` },
+    { role: 'bot', content: `Hi! I'm Meditrack AI. You can ask me what all things you need to know about this platform.` },
   ]);
   const [input, setInput] = useState('');
   const [typing, setTyping] = useState(false);
@@ -110,12 +111,7 @@ export default function ChatWidget() {
                 <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
               </svg>
             ) : (
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path
-                  d="M21 12.5c0 3.59-3.58 6.5-8 6.5-.94 0-1.83-.13-2.66-.38-.46-.14-1.48.35-2.91 1.49-.31.25-.77-.05-.66-.44.38-1.41.51-2.44.39-2.91C5.13 15.83 5 14.94 5 14c0-3.59 3.58-6.5 8-6.5s8 2.91 8 6.5Z"
-                  fill="currentColor"
-                />
-              </svg>
+              <FaRegMessage size={24} aria-hidden="true" />
             )}
           </span>
         </motion.button>

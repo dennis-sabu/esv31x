@@ -7,11 +7,11 @@ import AuthComponent from '../components/AuthComponent';
 
 export default function AuthPage() {
   const slides = [
-    '/Illustration.webp',
-    '/Mockup.webp',
-    '/Gemini_Generated_Image_ullk5cullk5cullk.png',
-    '/image 2.webp',
-    '/handsome-young-multiethnic-business-couple-with-digital-tablet-standing-discussing-modern-office 1.webp',
+    '/img1.png',
+    '/img2.png',
+    '/img3.png',
+    '/img4.png',
+    '/img5.png',
   ];
   const [index, setIndex] = useState(0);
 
@@ -50,7 +50,7 @@ export default function AuthPage() {
               {/* Soft overlay tint */}
               <div className="absolute inset-0 bg-gradient-to-tr from-green-200/20 to-green-50/10" aria-hidden="true"></div>
               {/* Endless loop slider (no text) */}
-              <div className="relative h-[700px] w-[900px] overflow-hidden">
+              <div className="relative h-[600px] w-[full] overflow-hidden">
                 <AnimatePresence initial={false} mode="wait">
                   <motion.div
                     key={slides[index]}
